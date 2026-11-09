@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f6fb;
+    color: #222;
+    padding: 30px 20px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+header h1 {
+    font-size: 32px;
+    color: #252b48;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #777;
+    font-size: 15px;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.card {
+    padding: 25px;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+.card h3 {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.card h2 {
+    font-size: 27px;
+}
+
+.income h2 {
+    color: #16a36a;
+}
+
+.expense h2 {
+    color: #e74c3c;
+}
+
+.balance h2 {
+    color: #4c63d2;
+}
+
+.transaction-form,
+.history {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0  4px 15px rgba(0, 0, 0, 0.06);
+}
+
+.transaction-form h2,
+.history h2 {
+    font-size: 21px;
+    margin-bottom: 20px;
+    color: #252b48;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 15px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    outline: none;
+    font-size: 14px;
+}
+
+input:focus,
+select:focus {
+    border-color: #4c63d2;
+}
+
+button {
+    padding: 13px;
+    background: #4c63d2;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #354bb5;
+}
+
+#transaction-list {
+    color: #777;
+    font-size: 14px;
+}
+
+@media(max-width: 768px) {
+    .dashboard {
+        grid-template-columns: 1fr;
+    }
+
+    form {
+        grid-template-columns: 1fr;
+    }
+
+    header h1 {
+        font-size: 26px;
+    }
+
+    .card h2 {
+        font-size: 27px;
+    }
+
+    .income h2 {
+        color: #16a36a;
+    }
+}
